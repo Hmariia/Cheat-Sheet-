@@ -1,0 +1,205 @@
+/*External Css*/
+/*resets everything
+*{
+    margin: 0;
+    padding: 0;
+} */
+
+body{
+    background-color: #f4f4f4;
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    /*shorter way of writing upper code*/
+    font: normal 16px Arial, Helvetica, sans-serif;
+    /*space between lines*/
+    line-height: 1.6em;
+    /*space on the sides of the pages aroung the border*/
+    margin: 0;
+    border: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    color: green;
+}
+
+a:active{
+    color: red;
+}
+
+/*a:visited{
+}*/
+.container{
+    width: 80%;
+    margin: auto; /*makes even space around*/
+}
+
+.button{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+}
+.button:hover{
+    background: red;
+    color: #fff;
+}
+
+.clr{
+    clear: both;
+}
+
+.box-1{
+    background-color: #333;
+    color: #fff;
+    /*space around frame*/
+    border: 5px red solid;
+    border-width: 3px;
+    border-bottom-width: 10px;
+    border-bottom-style: groove;
+
+    /*space around text*/
+    padding: 20px;
+
+    /*space on the sides of the pages aroung the border*/
+    margin: 20px 0;
+}
+
+.box-1 h1{
+    font-family: Tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+}
+
+.box-2{
+    border: 3px dotted #ccc;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.category{
+    border: 1px #ccc solid;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.category h2{
+    text-align: center
+}
+
+.category ul{
+    padding: 0;
+    padding-left: 20px;
+    list-style: square;
+    list-style: none;
+}
+
+
+.category li{
+    padding-bottom: 8px;
+    border-bottom: dotted 1px #333;
+    list-style-image: url('../images/check.png');
+}
+
+.my-form{
+    padding: 20px;
+}
+
+.my-form.form-group{
+    padding-bottom: 15px;
+}
+
+.my-form label{
+    display: block;
+}
+
+.my-form input[type="text"] .my-form textarea{
+    padding: 8px;
+    width: 100%;
+}
+
+.block{
+    float: left;
+    width: 33.3%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#main-block{
+    float: left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#side-bar{
+    float: right;
+    width: 30%;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.p-box{
+    width: 800px;
+    height: 500px;
+    border: 1px solid black;
+    margin-top: 30px;
+    position: relative; /*to move elements within the parent box*/
+    background-image: url('../images/image.jpeg');
+    background-position: 100px 200px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin: auto;
+    
+}
+
+.p-box h1{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+.p-box h2{
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+}
+
+.fix-me{
+    position: fixed; /*the button will be displayed always at same place within the page*/
+    top: 400px;
+}
+
+.my-list{
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.my-list li:first-child{
+    background: red;
+}
+
+.my-list li:last-child{
+    background: blue;
+}
+
+.my-list li:nth-child(5){
+    background: yellow;
+}
+
+.my-list li:nth-child(even){
+    background: grey;
+}
